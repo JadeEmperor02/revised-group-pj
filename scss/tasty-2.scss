@@ -479,7 +479,7 @@ ul {
 /* ========================= */
 /* deeper gallery container */
 .deeper-gallery {
-  width: 100dvw;
+  width: 100vw;
   height: max-content;
   background-image: linear-gradient(135deg, hsl(0, 0%, 0%), hsl(120, 0%, 0%));
 }
@@ -507,7 +507,6 @@ ul {
 
 .show-text {
   position: absolute;
-  display: block;
   top: 0;
   right: 0;
   bottom: 0;
@@ -535,7 +534,8 @@ ul {
   display: none;
 }
 .show-output .show-text {
-  left: -94%;
+  right: unset;
+  left: 0;
 }
 .text-output {
   width: inherit;
@@ -551,10 +551,6 @@ ul {
   display: none;
 }
 .show-output .text-output {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
   display: grid;
 }
 
@@ -603,9 +599,8 @@ span[data-color="cl-red"] {
   }
 
   .aside {
-    display: block;
     position: static;
-    z-index: 0;
+    display: block;
     grid-row: 2/3;
   }
   .hero-insight {
@@ -652,19 +647,15 @@ span[data-color="cl-red"] {
   /* ----------- */
   .inner1 {
     width: 24em;
-    transform: translateX(-5em);
+    transform: translateX(-2.3em);
   }
   .inner2 {
     width: 24em;
-    transform: translateX(7em);
+    transform: translateX(4em);
   }
   .inner3 {
     width: 24em;
-    transform: translateX(-5em);
-  }
-
-  .show-output .show-text {
-    left: -95.9%;
+    transform: translateX(-2.3em);
   }
 
   /***********************/
@@ -699,13 +690,14 @@ span[data-color="cl-red"] {
   /* ----------- */
   .inner-grid {
     grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
   }
   .inner1 {
     grid-column: 2/7;
   }
   .inner2 {
     grid-column: 2/7;
-    transform: translateX(7em);
+    transform: translateX(4em);
   }
   .inner3 {
     grid-column: 2/7;
@@ -758,7 +750,7 @@ span[data-color="cl-red"] {
     border-top-right-radius: 0.3rem;
     border-bottom-left-radius: 0.3rem;
     border-bottom-right-radius: 0.3rem;
-    margin-inline: 70px;
+    margin-inline: 58px;
     perspective: 100px;
     transition: all 0.5s;
   }

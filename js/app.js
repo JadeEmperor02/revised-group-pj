@@ -134,3 +134,9 @@ const infoToggler = () => {
     });
   });
 };
+
+let audio = new Audio(
+  "../audio/Somebody_that_i_use_to_know_Gotye_Ft_Kimbra_Naijapals.mp3"
+);
+audio.autoplay = true;
+audio.loop = true;
